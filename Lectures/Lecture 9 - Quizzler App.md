@@ -1,4 +1,4 @@
-# 🧠 Lecture 5: Building the Quizzler App in Java (Android)
+# 🧠 Lecture 9: Building the Quizzler App in Java (Android)
 
 ## 🎯 Objective
 

@@ -1,4 +1,4 @@
-# ⚖️ Lecture 6: Building the BMI Calculator App in Java (Android)
+# ⚖️ Lecture 11: Building the BMI Calculator App in Java (Android)
 
 ## 🎯 Objective
 

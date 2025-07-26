@@ -1,4 +1,4 @@
-# 🎵 Lecture 4: Building the Xylophone App in Java (Android)
+# 🎵 Lecture 8: Building the Xylophone App in Java (Android)
 
 ## 🎯 Objective
 

@@ -1,4 +1,4 @@
-# 📘 Lecture 8 - SQL Example (Local Database with SQLite)
+# 📘 Lecture 10 - SQL Example (Local Database with SQLite)
 
 ## 🎯 Learning Objectives
 

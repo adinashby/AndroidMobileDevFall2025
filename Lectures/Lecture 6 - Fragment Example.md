@@ -1,4 +1,4 @@
-# 📘 Lecture 11 - Fragment Example
+# 📘 Lecture 6 - Fragment Example
 
 ## 🎯 Learning Objectives
 

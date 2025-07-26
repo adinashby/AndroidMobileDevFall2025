@@ -1,4 +1,4 @@
-# 🌦️ Lecture 7: Building the Clima Weather App in Java (Android)
+# 🌦️ Lecture 12: Building the Clima Weather App in Java (Android)
 
 ## 🎯 Objective
 

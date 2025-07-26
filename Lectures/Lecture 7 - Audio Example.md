@@ -1,4 +1,4 @@
-# 🎵 Lecture 9 - Audio Example (Using `MediaPlayer` in Android)
+# 🎵 Lecture 7 - Audio Example (Using `MediaPlayer` in Android)
 
 ## 🎯 Learning Objectives
 

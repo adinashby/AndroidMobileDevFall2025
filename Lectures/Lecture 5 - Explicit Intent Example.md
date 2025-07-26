@@ -1,4 +1,4 @@
-# 📘 Lecture 10 - Explicit Intent Example
+# 📘 Lecture 5 - Explicit Intent Example
 
 ## 🎯 Learning Objectives
 

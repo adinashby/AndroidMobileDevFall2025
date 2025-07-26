@@ -1,4 +1,4 @@
-# 📘 Lecture 12 - RecyclerView Example
+# 📘 Lecture 4 - RecyclerView Example
 
 ## 🎯 Learning Objectives
 
