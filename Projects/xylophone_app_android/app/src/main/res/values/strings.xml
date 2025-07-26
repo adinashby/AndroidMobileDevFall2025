@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Xylophone App</string>
+    <string name="note_1">Play Note 1</string>
+    <string name="note_2">Play Note 2</string>
+    <string name="note_3">Play Note 3</string>
+    <string name="note_4">Play Note 4</string>
+    <string name="note_5">Play Note 5</string>
+    <string name="note_6">Play Note 6</string>
+    <string name="note_7">Play Note 7</string>
+
+    <string name="c"><b><font size="24">C</font></b></string>
+    <string name="d"><b><font size="24">D</font></b></string>
+    <string name="e"><b><font size="24">E</font></b></string>
+    <string name="f"><b><font size="24">F</font></b></string>
+    <string name="g"><b><font size="24">G</font></b></string>
+    <string name="a"><b><font size="24">A</font></b></string>
+    <string name="b"><b><font size="24">B</font></b></string>
+</resources>

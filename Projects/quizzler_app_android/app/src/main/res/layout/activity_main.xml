@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="24dp">
+
+<TextView
+    android:id="@+id/question_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Question Text"
+    android:textSize="24sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="70dp" />
+
+    <LinearLayout
+        android:id="@+id/score_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_container"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/true_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="True"
+        android:background="@color/green"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/false_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="False"
+        android:background="@color/red"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/sky_blue">
+
+    <EditText
+        android:id="@+id/city_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter City Name"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="16dp"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/get_weather_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Weather"
+        android:layout_below="@id/city_edit_text"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>
