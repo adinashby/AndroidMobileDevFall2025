@@ -59,13 +59,33 @@ In `AndroidManifest.xml`:
 **In `MainActivity.java`:**
 
 ```java
-ImageView imageView = findViewById(R.id.profile_image);
-String imageUrl = "https://example.com/me.png";
+package com.example.micardapp;
 
-Glide.with(this)
-    .load(imageUrl)
-    .circleCrop()
-    .into(imageView);
+import android.os.Bundle;
+import android.widget.ImageView;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.bumptech.glide.Glide;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+
+        ImageView imageView = findViewById(R.id.profile_image);
+        String imageUrl = "https://avatars.githubusercontent.com/u/47254289?s=400&u=d58131e2fa3e99eb1e36480bb5859c9e07c5c968&v=4"; // 🔗 Your image URL
+
+        Glide.with(this)
+                .load(imageUrl)
+                .circleCrop() // for circular display
+                .into(imageView);
+    }
+}
 ```
 
 **Add dependencies (in `build.gradle.kts`):**
@@ -96,6 +116,107 @@ annotationProcessor(libs.glideCompiler)
 
 - Use `LinearLayout` for vertical stacking
 - Add `ImageView`, `TextView`s, `View` (for divider), and `CardView`s
+
+```xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/teal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adin Ashby"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:fontFamily="@font/pacifico_regular" />
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLUTTER DEVELOPER"
+        android:textColor="@android:color/white"
+        android:letterSpacing="0.2"
+        android:textSize="16sp"
+        android:fontFamily="@font/sourcesanspro_regular" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1 123 456 7890"
+                android:layout_marginStart="16dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:fontFamily="@font/sourcesanspro_regular" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_dialog_email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adin@gmail.com"
+                android:layout_marginStart="16dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:fontFamily="@font/sourcesanspro_regular" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+```
 
 ---
 
